@@ -13,27 +13,24 @@
         <form action="" method="get">
             <fieldset>
                 <legend>Dados pessoais</legend>
-
-                <input type="text" name="userName">
                 <label id="userNameLabel" for="userName">Nome:</label>
-                
-                <input type="number" name="userAge" required min="12" max="120">
+                <input type="text" name="userName">
+                <br>
                 <label id="userAgeLabel" for="userAge">Idade:</label>
-                    
+                <input type="number" name="userAge" required min="12" max="120">
+                <br>
+                <label id="userBirthDateLabel" for="userBirthDate">Data de nascimento:</label>    
                 <input type="date" name="userBirthDate">     
-                <label id="userBirthDateLabel" for="userBirthDate">Data de nascimento:</label>
-                    
+                <br>
+                <label id="userEmailLabel" for="userEmail">E-mail:</label>    
                 <input type="email" name="userEmail">    
-                <label id="userEmailLabel" for="userEmail">E-mail:</label>
-                    
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="12123456789">       
-                <label id="userPhoneNumberLabel" for="userPhoneNumber">Telefone</label>
-                    
+                <br>
+                <label id="userPhoneNumberLabel" for="userPhoneNumber">Telefone</label>    
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="12123456789">   
+                <br>    
+                <label id="userImageLabel" for="userImage">Upload de foto</label>
                 <input type="file" accept="image/*" name="userImage">          
-                <label id="userImageLabel" for="userImage">Upload de foto</label>
-                    
-                <input type="file" accept="image/*" name="userImage">
-                <label id="userImageLabel" for="userImage">Upload de foto</label>
+                <br>
             </fieldset> 
             
             <fieldset>
@@ -95,7 +92,39 @@
                 <label for="city">Cidade:</label>
                 <input id="city" type="text" name="userCity" required>    
 
+            </fieldset>  
+    
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Redes Sociais:</p>
+                <input id="facebook" type="checkbox" name="social" value="facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input id="twitter" type="checkbox" name="social" value="twitter">
+                <label for="twitter">X</label>
+                <br>    
+                <input id="instagram" type="checkbox" name="social" value="instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+                <input id="linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="linkedin">LinkedIn</label>    
+                <br>
+                <label for="musicalStyle">Estilo Musical:</label>
+                <input id="musicalStyle" name="musicalStyle" type="text" list="styleTypes">
+                <datalist id="styleTypes">
+                    <option value="Rock">
+                    <option value="Pop">
+                    <option value="Sertanejo">
+                    <option value="Funk">
+                    <option value="MPB">
+                    <option value="Eletrônica">
+                </datalist> 
+                <br>
+                <label for="favoriteColor">Cor favorita:</label>
+                <input id="favoriteColor" name="userFavoriteColor" type="color">
+                <br>
             </fieldset>
+            
         </form>
     </section>
 </body>
